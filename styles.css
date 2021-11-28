@@ -1,24 +1,17 @@
 html {
-  /* Defing a CSS Variable like below:  */
-  /* Make sure to position it above as well */
   --color-grey-100: rgb(236, 236, 236);
-  --color-grey-400: rgb(129, 118, 118);
+  --color-grey-400: rgb(139, 139, 139);
   --color-grey-600: rgb(58, 58, 58);
   --color-grey-900: rgb(41, 41, 41);
 
-
-  /* Css variables for our primary colors */
-  --color-primary-300: rgb(167, 226, 255);
+  --color-primary-300: rgb(115, 208, 255);
   --color-primary-700: rgb(0, 170, 255);
 
   --size-1: 18px;
   --size-5: 50px;
 
-
   background-color: var(--color-grey-100);
-  /* Our original background color without the CSS Variable */
-  /* background-color: rgb(236, 236, 236); */
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   font-weight: 400;
 }
 
@@ -27,20 +20,20 @@ html {
   width: 350px;
   margin: 50px auto;
   box-shadow: 3px 3px 10px rgb(201, 200, 200);
+  transition: transform 0.5s ease-out;
+
 }
 
 .card-container:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 h1 {
   color: var(--color-grey-600);
-  /* Our original color below witout a css variable */
-  /* color: rgb(134, 134, 134); */
   text-align: left;
   padding: 30px 50px 0px 50px;
   margin: 10px 0;
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
   font-weight: 600;
 }
 
@@ -53,20 +46,15 @@ h1 {
 
 .price {
   color: var(--color-grey-900);
-  /* Our original color below witout a css variable */
-  /* color: rgb(41, 41, 41); */
   background-color: var(--color-primary-300);
   text-align: center;
   margin: 30px auto 10px auto;
-  /* You can add css variables for font sizes also */
   font-size: var(--size-5);
   font-weight: 600;
 }
 
 .price-info {
   color: var(--color-grey-400);
-  /* Our original color below witout a css variable */
-  /* color: rgb(134, 134, 134); */
   text-align: center;
   margin: 10px 0 30px 0;
   padding: 0 50px;
@@ -77,24 +65,20 @@ h1 {
   margin: 30px 50px;
 }
 
-
 .sub-feature {
   display: flex;
 }
 
 .icon {
   display: flex;
-  width: 10px;
+  width: 15px;
 }
 
 .sub-feature-text {
   color: var(--color-grey-600);
-  /* Our original color below witout a css variable */
-  /* color: rgb(58,58,58); */
   padding: 2px;
   margin: 5px;
 }
-
 
 .button-container {
   text-align: center;
@@ -102,7 +86,7 @@ h1 {
 }
 
 .button {
-  color: var(--color-primary-700)
+  color: var(--color-primary-700);
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -110,13 +94,13 @@ h1 {
   padding: 10px;
   margin: 0 0 30px 0;
   border: 2px solid rgb(224, 224, 224);
-  /* You can add css variables for font sizes also */
   font-size: var(--size-1);
   font-weight: 600;
+  transition: background-color 0.5s ease-out;
 }
 
 .button:hover {
   color: white;
-  background-color: var(--color-primary-700)
+  background-color: var(--color-primary-700);
   border: 2px solid rgb(255, 255, 255);
 }

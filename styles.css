@@ -29,6 +29,10 @@ html {
   box-shadow: 3px 3px 10px rgb(201, 200, 200);
 }
 
+.card-container:hover {
+  transform: scale(1.2);
+}
+
 h1 {
   color: var(--color-grey-600);
   /* Our original color below witout a css variable */
